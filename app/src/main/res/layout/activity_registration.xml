@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Background using backhand_design -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,7 +7,7 @@
     android:gravity="center"
     android:background="@drawable/backhand_design"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".RegistrationActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,13 +21,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Log in here"
+                android:text="Registration page"
                 android:gravity="center"
                 android:textColor="@android:color/white"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 />
 
-            <!--    For login input-->
+            <!--    For email registration input-->
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,9 +38,9 @@
                 android:inputType="textEmailAddress"
                 android:textColorHint="@android:color/white"
                 android:textColor="@android:color/white"
-                android:id="@+id/email_login"
+                android:id="@+id/email_reg"
                 />
-            <!--    For password input-->
+            <!--    For password registration input-->
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -52,10 +51,10 @@
                 android:inputType="textPassword"
                 android:textColorHint="@android:color/white"
                 android:textColor="@android:color/white"
-                android:id="@+id/password_login"
+                android:id="@+id/password_reg"
                 />
 
-            <!--    Login Button-->
+            <!--    resgistration Button-->
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -65,23 +64,21 @@
                 android:padding="4dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@android:color/white"
-                android:id="@+id/btn_login"
+                android:id="@+id/btn_reg"
                 />
             <!--    Sign up-->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:text="Sign Up Here"
+                android:text="Already have a account? Log In Here"
                 android:gravity="center"
                 android:textColor="@android:color/white"
                 android:padding="5dp"
-                android:id="@+id/signup_txt"/>
+                android:id="@+id/signin_txt"/>
 
         </LinearLayout>
     </ScrollView>
-    
-
 
 
 
