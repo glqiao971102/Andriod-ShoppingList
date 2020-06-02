@@ -60,7 +60,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_margin="10dp"
-                    android:id="@+id/edt_type"
+                    android:id="@+id/item_type"
                     android:layout_height="wrap_content"/>
 
 
@@ -99,7 +99,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_margin="10dp"
-                    android:id="@+id/edt_amount"
+                    android:id="@+id/item_amount"
                     android:layout_height="wrap_content"/>
 
 
@@ -138,7 +138,7 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_margin="10dp"
-                    android:id="@+id/edt_note"
+                    android:id="@+id/item_note"
                     android:layout_height="wrap_content"/>
 
 
@@ -155,7 +155,7 @@
             android:text="Add Me"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@android:color/white"
-            android:id="@+id/btn_save"
+            android:id="@+id/button_save"
 
             />
 
