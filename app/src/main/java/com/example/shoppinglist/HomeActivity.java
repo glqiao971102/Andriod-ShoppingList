@@ -3,15 +3,13 @@ package com.example.shoppinglist;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.Toolbar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -44,6 +42,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.text.DateFormat;
 import java.util.Date;
 >>>>>>> parent of b9ec3b6... revert receive database
+=======
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -56,11 +58,6 @@ public class HomeActivity extends AppCompatActivity {
 =======
 >>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 
-    private DatabaseReference mDatabase;
-    private FirebaseAuth mAuth;
-
-    private RecyclerView recyclerView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +67,7 @@ public class HomeActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
 //        getSupportActionBar().setTitle("MY SUPER SHOPPING LIST");
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         mDatabase = FirebaseDatabase
@@ -93,6 +91,8 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
 >>>>>>> parent of b9ec3b6... revert receive database
+=======
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
         fab_btn = findViewById(R.id.fab);
 
         fab_btn.setOnClickListener(new View.OnClickListener() {
@@ -126,8 +126,6 @@ public class HomeActivity extends AppCompatActivity {
                     String myPrice = price.getText().toString().trim();
                     String myNote = note.getText().toString().trim();
 
-                    int intPrice = Integer.parseInt(myPrice);
-
                     if(TextUtils.isEmpty(myType)){
                         type.setError("Hey, cannot leave it blank");
                         return;
@@ -140,15 +138,6 @@ public class HomeActivity extends AppCompatActivity {
                         note.setError("Hey, cannot leave it blank");
                         return;
                     }
-
-                    String id = mDatabase.push().getKey();
-
-                    String date = DateFormat.getDateInstance().format(new Date());
-                    Data data = new Data(myType,intPrice,myNote,date,id);
-
-                    mDatabase.child(id).setValue(data);
-
-                    Toast.makeText(getApplicationContext(),"Item added", Toast.LENGTH_SHORT).show();
 
                     dialog.dismiss();
 <<<<<<< HEAD
