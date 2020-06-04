@@ -8,11 +8,11 @@
     tools:context=".HomeActivity">
 
 <!--    This is to include the toolbar.xml on the top of the page-->
-<!--    <include-->
-<!--        android:id="@+id/home_toolbar"-->
-<!--        layout="@layout/toolbar"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content" />-->
+    <include
+        android:id="@+id/home_toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 <!--    Make all the layout seperate and no crash & overlay together-->
     <androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -74,15 +74,14 @@
             </androidx.cardview.widget.CardView>
 
 <!--            This is for the recyclerView for later link to the Firebase data-->
-            <androidx.recyclerview.widget.RecyclerView
+            <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_home"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
                  />
 
-
-            <!--    For the bottom right floating button to add the item-->
+<!--    For the bottom right floating button to add the item-->
         </LinearLayout>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
