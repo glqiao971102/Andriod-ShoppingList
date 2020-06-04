@@ -12,6 +12,7 @@ import android.widget.EditText;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
@@ -46,6 +47,10 @@ import java.util.Date;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 >>>>>>> parent of 96ac913... Insert data to firebase && design the item page
+=======
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 
 
 public class HomeActivity extends AppCompatActivity {
@@ -53,8 +58,11 @@ public class HomeActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private FloatingActionButton fab_btn;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private DatabaseReference mDatabase;
     private FirebaseAuth mAuth;
+=======
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 =======
 >>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 
@@ -67,6 +75,7 @@ public class HomeActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
 //        getSupportActionBar().setTitle("MY SUPER SHOPPING LIST");
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -91,6 +100,8 @@ public class HomeActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
 >>>>>>> parent of b9ec3b6... revert receive database
+=======
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 =======
 >>>>>>> parent of 96ac913... Insert data to firebase && design the item page
         fab_btn = findViewById(R.id.fab);
@@ -141,6 +152,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     dialog.dismiss();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 }
             });
 
@@ -166,6 +178,8 @@ public class HomeActivity extends AppCompatActivity {
                     viewHolder.setNote((model.getNote()));
                     viewHolder.setPrice(model.getPrice());
 
+=======
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 =======
 >>>>>>> parent of 96ac913... Insert data to firebase && design the item page
                 }
