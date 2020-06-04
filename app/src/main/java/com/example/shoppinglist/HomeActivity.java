@@ -10,22 +10,34 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 <<<<<<< HEAD
+
+
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.shoppinglist.Model.Data;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 =======
 
->>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 
 
 public class HomeActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
     private FloatingActionButton fab_btn;
+<<<<<<< HEAD
+    private DatabaseReference mDatabase;
+    private FirebaseAuth mAuth;
+=======
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +48,11 @@ public class HomeActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
 //        getSupportActionBar().setTitle("MY SUPER SHOPPING LIST");
 
+<<<<<<< HEAD
+        mDatabase = FirebaseDatabase
+
+=======
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
         fab_btn = findViewById(R.id.fab);
 
         fab_btn.setOnClickListener(new View.OnClickListener() {
@@ -83,75 +100,78 @@ public class HomeActivity extends AppCompatActivity {
                     }
 
                     dialog.dismiss();
+<<<<<<< HEAD
                 }
             });
 
             dialog.show();
         }
 
-//        protected void onStart() {
-//
-//            super.onStart();
-//            FirebaseRecyclerAdapter<Data, myViewHolder>adapter= new FirebaseRecyclerAdapter<Data, myViewHolder>
-//                    (
-//                            Data.class,
-//                            R.layout.item,
-//                            myViewHolder.class,
-//                            mDatabase
-//                    )
-//            {
-//                @Override
-//                protected void populateViewHolder(myViewHolder viewHolder, Data model, int position) {
-//
-//                    viewHolder.setDate(model.getDate());
-//                    viewHolder.setType(model.getType());
-//                    viewHolder.setNote((model.getNote()));
-//                    viewHolder.setPrice(model.getPrice());
-//
-//                }
-//            };
-//
-//            recyclerView.setAdapter(adapter);
-//
-//        }
+        protected void onStart() {
+
+            super.onStart();
+            FirebaseRecyclerAdapter<Data, myViewHolder>adapter= new FirebaseRecyclerAdapter<Data, myViewHolder>
+                    (
+                            Data.class,
+                            R.layout.item,
+                            myViewHolder.class,
+                            mDatabase
+                    )
+            {
+                @Override
+                protected void populateViewHolder(myViewHolder viewHolder, Data model, int position) {
+
+                    viewHolder.setDate(model.getDate());
+                    viewHolder.setType(model.getType());
+                    viewHolder.setNote((model.getNote()));
+                    viewHolder.setPrice(model.getPrice());
+
+=======
+>>>>>>> parent of 96ac913... Insert data to firebase && design the item page
+                }
+            };
+
+            recyclerView.setAdapter(adapter);
+
+        }
 
 
-//            public  static  class myViewHolder extends RecyclerView.ViewHolder{
-//
-//                View myview;
-//
-//                public myViewHolder(View itemView){
-//                    super(itemView);
-//                    myview = itemView;
-//
-//                }
-//
-//                public void setType(String type){
-//                    TextView mType = myview.findViewById(R.id.type);
-//                    mType.setText(type);
-//                }
-//
-//                public void setNote(String note){
-//                    TextView mNote = myview.findViewById(R.id.note);
-//                    mNote.setText(note);
-//                }
-//
-//                public void setDate(String date){
-//                    TextView mDate = myview.findViewById(R.id.date);
-//                    mDate.setText(date);
-//                }
-//
-//
-//
-//                public void setPrice(int price){
-//                    TextView mPrice = myview.findViewById(R.id.price);
-//                    String stAmount = String.valueOf(price);
-//                    mPrice.setText(stAmount);
-//                }
-//
-//
-//
-//            }
+            public  static  class myViewHolder extends RecyclerView.ViewHolder{
+
+                View myview;
+
+                public myViewHolder(View itemView){
+                    super(itemView);
+                    myview = itemView;
+
+                }
+
+                public void setType(String type){
+                    TextView mType = myview.findViewById(R.id.type);
+                    mType.setText(type);
+                }
+
+                public void setNote(String note){
+                    TextView mNote = myview.findViewById(R.id.note);
+                    mNote.setText(note);
+                }
+
+                public void setDate(String date){
+                    TextView mDate = myview.findViewById(R.id.date);
+                    mDate.setText(date);
+                }
+
+
+
+                public void setPrice(int price){
+                    TextView mPrice = myview.findViewById(R.id.price);
+                    String stAmount = String.valueOf(price);
+                    mPrice.setText(stAmount);
+                }
+
+
+
+            }
 
 
     }
