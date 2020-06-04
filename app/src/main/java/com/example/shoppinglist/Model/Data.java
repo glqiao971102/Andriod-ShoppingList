@@ -8,10 +8,7 @@ public class Data {
     String date;
     String id;
 
-    public Data(){
 
-
-    }
 
     public Data(String type, int price, String note, String date, String id) {
         this.type = type;

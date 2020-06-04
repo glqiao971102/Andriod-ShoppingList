@@ -70,7 +70,7 @@
                 android:layout_height="wrap_content"
                 android:text="200"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:id="@+id/amount"
+                android:id="@+id/price"
                 android:padding="5dp"
                 android:textColor="#F44336"
                 />
